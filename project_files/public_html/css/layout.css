@@ -41,7 +41,21 @@ header > nav {
 
 .wrapper > main {
     grid-area: m;
+    display: grid;
+    grid-template-areas:
+        'banner'
+        'info'
+    ;
 }
+
+main > .banner {
+    grid-area: banner;
+}
+
+main > .info {
+    grid-area: info;
+}
+
 .wrapper > footer {
     grid-area: f;
 }
