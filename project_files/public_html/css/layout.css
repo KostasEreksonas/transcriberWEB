@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    height: 100%;
+    width: 1200px;
+    display: grid;
+    grid-template-areas:
+        'h'
+        'm'
+        'f'
+    ;
+}
+
+.wrapper > header {
+    grid-area: h;
+    display: grid;
+    grid-template-areas:
+        'logo navigation'
+    ;
+}
+
+header > .logo, .navigation {
+    display: grid;
+    align-items: center;
+}
+
+header > .logo {
+    grid-area: logo;
+    justify-content: left;
+}
+
+header > nav {
+    grid-area: navigation;
+    justify-content: right;
+    margin-right: 1%;
+}
+
+.wrapper > main {
+    grid-area: m;
+}
+.wrapper > footer {
+    grid-area: f;
+}
