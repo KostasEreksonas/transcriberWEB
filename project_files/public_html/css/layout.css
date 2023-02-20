@@ -13,6 +13,7 @@ body {
         'm'
         'f'
     ;
+    grid-gap: 10px;
 }
 
 .wrapper > header {
@@ -50,6 +51,7 @@ header > nav {
 
 main > .banner {
     grid-area: banner;
+    display: grid;
 }
 
 main > .info {
