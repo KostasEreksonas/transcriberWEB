@@ -25,30 +25,17 @@ header {
     margin: 2%;
 }
 
-header a {
+a {
     color: var(--font-color);
     text-decoration: none;
 }
 
-.logo, .navigation {
+.logo, .navigation, .copyright, .navigation-footer {
     width: 100%;
-}
-
-nav ul {
-    display: block;
-    margin: 0;
-}
-
-nav li {
-    float: right;
-    display: grid;
-    padding: 10px;
-    margin: 1%;
 }
 
 .banner {
     background-color: var(--banner-color);
-    background-image: url("../images/banner.jpg");
     place-items: center;
 }
 
@@ -63,10 +50,31 @@ nav li {
 }
 
 .banner > button {
+    border-radius: 15px;
     background-color: var(--button-color);
     color: white;
-    padding: 15px 32px;
+    padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+}
+
+.infoblock {
+    background-color: var(--infoblock-color);
+    place-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.infoblock > p {
+    text-align: center;
+}
+
+.infoblock > img {
+    width: 75%;
+}
+
+footer {
+    background-color: var(--footer-color);
+    place-items: center;
 }

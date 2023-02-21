@@ -40,6 +40,18 @@ header > nav {
     margin-right: 1%;
 }
 
+nav ul {
+    display: block;
+    margin: 0;
+}
+
+nav li {
+    float: right;
+    display: grid;
+    padding: 10px;
+    margin: 2%;
+}
+
 .wrapper > main {
     grid-area: m;
     display: grid;
@@ -47,6 +59,7 @@ header > nav {
         'banner'
         'info'
     ;
+    grid-gap: 10px;
 }
 
 main > .banner {
@@ -56,8 +69,27 @@ main > .banner {
 
 main > .info {
     grid-area: info;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.infoblock {
+    display: grid;
 }
 
 .wrapper > footer {
     grid-area: f;
+    display: grid;
+    grid-template-areas:
+        'copyright navigation'
+    ;
+}
+
+footer > .copyright {
+    grid-area: copyright;
+}
+
+footer > .navigation-footer {
+    grid-area: navigation;
 }
