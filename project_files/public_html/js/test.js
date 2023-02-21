@@ -1,1 +1,3 @@
-console.log(3);
+function displayInfo() {
+    let element = document.getElementById('more-info');
+}
