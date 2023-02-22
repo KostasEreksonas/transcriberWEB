@@ -47,6 +47,7 @@ a {
     border-bottom: 5px solid var(--line-color);
     border-radius: 5px;
     width: 80%;
+    margin: 2%;
 }
 
 button {
@@ -69,6 +70,7 @@ button {
 
 .infoblock > p {
     text-align: center;
+    margin: 2%;
 }
 
 .infoblock > img {
@@ -78,4 +80,36 @@ button {
 footer {
     background-color: var(--footer-color);
     place-items: center;
+}
+
+.popup {
+    background-color: var(--popup-background);
+    text-align: center;
+}
+
+.popup-content {
+    background-color: var(--popup-content-color);
+    border: 2px solid var(--popup-content-border);
+}
+
+.popup-content > .header {
+    background-color: #FFCCCB;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-line {
+    border-bottom: 5px solid var(--line-color);
+    border-radius: 5px;
+    width: 100%;
 }

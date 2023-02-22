@@ -8,4 +8,7 @@
     --button-color: #0000FF;
     --infoblock-color: #F8CECC;
     --footer-color: #E1D5E7;
+    --popup-background: rgba(0,0,0,0.4);
+    --popup-content-color: #FEFEFE;
+    --popup-content-border: #888888;
 }
