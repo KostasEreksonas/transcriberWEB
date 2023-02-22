@@ -8,7 +8,7 @@ button.onclick = function()
 {
     let request = new XMLHttpRequest();
     let file = '../src/popup.php';
-    request.open("get", file, true);
+    request.open("post", file, true);
     request.onreadystatechange = function()
     {
         if (this.readyState === 4 && this.status === 200)

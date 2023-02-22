@@ -1,9 +1,9 @@
 <?php
 
-function displayPopup(): void
+function displayPopup(): string
 {
 
-    echo '<div class="popup-content">
+    $data='<div class="popup-content">
         <section class="header">
             <span class="close">&times;</span>
             <h1>PYTHON BACKEND</h1>
@@ -24,6 +24,7 @@ Nam eget dictum augue, non rutrum elit. Aliquam fermentum cursus nibh. Duis vehi
         </section>
         <button id="closeButton">CLOSE</button>
     </div>';
+    return $_POST[$data];
 }
 
 displayPopup();
