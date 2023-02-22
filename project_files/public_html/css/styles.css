@@ -93,7 +93,7 @@ footer {
 }
 
 .popup-content > .header {
-    background-color: #FFCCCB;
+    background-color: var(--popup-header-color);
 }
 
 .close {

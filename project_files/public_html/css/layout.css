@@ -106,9 +106,8 @@ footer > .navigation-footer {
 }
 
 .popup-content {
-    place-items: center;
     margin: auto;
-    padding: 20px;
+    padding: 1%;
     width: 80%;
     grid-template-areas:
         'header'
@@ -129,7 +128,6 @@ footer > .navigation-footer {
 
 .popup-content > .popup-line {
     grid-area: line;
-    width: 100%;
 }
 
 .popup-content > .text {
