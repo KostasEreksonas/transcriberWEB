@@ -6,6 +6,16 @@ let closeButton = document.getElementById("closeButton");
 // On button click open a pop-up window
 button.onclick = function()
 {
+    let request = new XMLHttpRequest();
+    let file = '../src/popup.php';
+    request.open("get", file, true);
+    request.onreadystatechange = function()
+    {
+        if (this.readyState === 4 && this.status === 200)
+        {
+            popup.innerHTML = this.responseText;
+        }
+    }
     popup.style.display = "grid";
 }
 
