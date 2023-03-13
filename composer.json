@@ -10,7 +10,7 @@
   },
   "autoload": {
     "psr-4": {
-      "transcriberWEB \\": "src\\, public_html\\"
+      "Baigiamasis\\": "src\\"
     }
   }
 }
